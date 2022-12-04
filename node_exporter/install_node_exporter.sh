@@ -28,4 +28,5 @@ ExecStart=/usr/local/bin/node_exporter --collector.systemd --collector.processes
 WantedBy=multi-user.target' > /etc/systemd/system/node_exporter.service
 
 systemctl daemon-reload
+systemctl enable node_exporter
 systemctl start node_exporter
